@@ -13,5 +13,6 @@ I decided to write a simple script that scraped Wikipedia page
 # Tools I Used
 
 Requests
+
 BeautifulSoup
 
