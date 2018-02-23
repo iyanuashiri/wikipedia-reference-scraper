@@ -99,3 +99,12 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+.idea/
+pip-selfcheck.json
+pyvenv.cfg
+lib64
+share/
+bin/
+lib/
+__pycache__/
