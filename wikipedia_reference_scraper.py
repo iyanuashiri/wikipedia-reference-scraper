@@ -16,10 +16,12 @@ def get_references(url, document_name):
     soup = BeautifulSoup(page_text, 'html.parser')
     citations = soup.find_all('cite')
 
-    file = open(document_name, 'w')
+    with open(document_name, 'w') as file:
 
-    for citation in citations:
-        file.write('\n\n')
-        for string in citation.strings:
-            file.write(string)
+        for citation in citations:
+            file.write('\n\n')
+            for string in citation.strings:
+                file.write(string)
+
+
 
