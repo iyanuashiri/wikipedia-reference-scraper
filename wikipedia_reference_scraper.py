@@ -19,10 +19,12 @@ def get_references(url):
 
 def write_to_document(url, document_name):
     with open(document_name, 'w') as file:
-        for citation in get_url_page(url):
+        for citation in get_references(url):
             file.write('\n\n')
             for string in citation.strings:
                 file.write(string)
+
+
 
 
 
