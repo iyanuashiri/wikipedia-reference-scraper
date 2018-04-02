@@ -9,13 +9,22 @@ to copy and paste the references. This was a lot of work considering the fact th
 working with just one page. I decided to make use of Wikipedia API wrappers but all the ones I checked didn't do what I needed. So
 I decided to write a simple script that scraped Wikipedia page.
 
-# Usage in a Python Interactive Shell
+# Usage
+
+## Python Interactive Shell
 
 ```
->>> from wikipedia_reference_scraper import write_to_document
+>>> from wikipedia_reference_scraper import WikipediaReferenceScraper as wrs
 
->>> write_to_document('https://en.wikipedia.org/wiki/Blood_pressure#References', 'filename.docx')
+>>> wrs().write_to_document('https://en.wikipedia.org/wiki/Blood_pressure#References', 'filename.docx')
 ```
+
+## Through the Command Line (with python-fire)
+
+```
+$ python wikipedia_reference_scraper.py write_to_document https://en.wikipedia.org/wiki/Blood_pressure#References filename.docx
+```
+
 It pulls the references from a Wikipedia page and saves the references in a file.
 
 # Tools I Used
@@ -23,3 +32,5 @@ It pulls the references from a Wikipedia page and saves the references in a file
 Requests
 
 BeautifulSoup
+
+python-fire
