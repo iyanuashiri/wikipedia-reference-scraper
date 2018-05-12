@@ -1,4 +1,7 @@
 # wikipedia-reference-scraper
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/eb15540153de49a98f6599cc8d12e73b)](https://app.codacy.com/app/iyanuashiri/wikipedia-reference-scraper?utm_source=github.com&utm_medium=referral&utm_content=iyanuashiri/wikipedia-reference-scraper&utm_campaign=badger)
+
 [Wikipedia](https://www.wikipedia.org/) API wrapper for references
 
 # Motivation
